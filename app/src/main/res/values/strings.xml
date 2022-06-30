@@ -1,0 +1,13 @@
+<resources>
+    <string name="bt_draw">draw polygon</string>
+    <string name="bt_clear">clear polygon</string>
+    <string name="bt_navigation">Find my position</string>
+    <string name="navigation">N</string>
+    <string name="bt_draw_polygon">create your polygon</string>
+    <string name="bt_draw_polyline">create your polyline</string>
+    <string name="app_name">Mapper</string>
+    <string name="fill_polygon">Fill Polygon</string>
+    <string name="Polygon">Polygon Color</string>
+    <string name="map_key" translatable="false">"null"</string>
+
+</resources>

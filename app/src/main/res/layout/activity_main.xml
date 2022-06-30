@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivitySecond">
+
+    <fragment
+        android:id="@+id/google_map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="137dp"
+        android:layout_height="122dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#63989797"
+        android:clickable="true"
+        android:contentDescription="@string/navigation"
+        android:focusable="true"
+        android:src="@android:drawable/ic_menu_mylocation"
+        android:text="@string/navigation"
+        android:textColor="@color/black"
+        app:backgroundTint="#000000"
+        app:rippleColor="@color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/check_box"
+                android:layout_width="121dp"
+                android:layout_height="wrap_content"
+                android:text="@string/fill_polygon"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/Polygon"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+
+        <SeekBar
+            android:id="@+id/seek_red"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:max="255"
+            android:progressTint="#FF0000"
+            android:thumbTint="#FF0000"
+            tools:visibility="visible" />
+
+        <SeekBar
+            android:id="@+id/seek_green"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:max="255"
+            android:progressTint="#00FF00"
+            android:thumbTint="#00FF00"
+            tools:visibility="visible" />
+
+        <SeekBar
+            android:id="@+id/seek_blue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/black"
+            android:max="255"
+            android:progressTint="#0000FF"
+            android:thumbTint="#0000FF"
+            tools:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/bt_draw_polygon"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1.5"
+                android:backgroundTint="@color/black"
+                android:text="@string/bt_draw"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/bt_draw_polyline"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="12dp"
+                android:layout_weight="0.6"
+                android:backgroundTint="@color/black"
+                android:text="@string/bt_clear"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
